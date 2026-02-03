@@ -27,4 +27,5 @@ export type Asset = {
   inputsRequired: string[];
   steps: string[];
   fileUrl: string | null;
+  isPremium?: boolean;
 };

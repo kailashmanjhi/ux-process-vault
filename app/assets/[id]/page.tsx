@@ -30,7 +30,7 @@ export default function AssetPage({
             <h1 className="mt-2 text-2xl font-semibold">{title}</h1>
             <p className="mt-3 text-black/70">{description}</p>
           </div>
-          {asset.is_premium ? (
+          {asset.isPremium ? (
             <span className="rounded-full bg-ink px-3 py-1 text-xs text-white">
               Premium
             </span>
