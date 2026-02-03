@@ -1,4 +1,4 @@
-export type AssetStatus = "todo" | "doing" | "done";
+export type AssetStatus = "todo" | "in_progress" | "done";
 
 export type AssetProgressItem = {
   assetId: string;

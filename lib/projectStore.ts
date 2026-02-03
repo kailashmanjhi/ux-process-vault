@@ -37,6 +37,7 @@ function ensureDefaultProject(): Project {
     id: `project_${Date.now()}`,
     name: DEFAULT_PROJECT_NAME,
     createdAt: new Date().toISOString(),
+    assetIds: [],
     assetProgress: []
   };
   writeProjects([project]);
@@ -77,6 +78,7 @@ export function createProject(name: string): Project {
     id: `project_${Date.now()}`,
     name,
     createdAt: new Date().toISOString(),
+    assetIds: [],
     assetProgress: []
   };
   const next = [...projects, project];
@@ -99,18 +101,19 @@ export function updateAssetStatus(
   }
 
   const project = projects[projectIndex];
-  const existing = project.assetProgress.find(
+  const assetProgress = project.assetProgress ?? [];
+  const existing = assetProgress.find(
     (entry) => entry.assetId === assetId
   );
 
   if (status === "todo") {
-    project.assetProgress = project.assetProgress.filter(
+    project.assetProgress = assetProgress.filter(
       (entry) => entry.assetId !== assetId
     );
   } else if (existing) {
     existing.status = status;
   } else {
-    project.assetProgress.push({ assetId, status });
+    project.assetProgress = [...assetProgress, { assetId, status }];
   }
 
   projects[projectIndex] = { ...project };
@@ -121,7 +124,8 @@ export function getAssetStatus(
   project: Project,
   assetId: string
 ): AssetStatus {
-  const entry = project.assetProgress.find((item) => item.assetId === assetId);
+  const assetProgress = project.assetProgress ?? [];
+  const entry = assetProgress.find((item) => item.assetId === assetId);
   return entry?.status ?? "todo";
 }
 
@@ -141,7 +145,7 @@ export function setProjectContext(
   const project = projects[projectIndex];
   projects[projectIndex] = {
     ...project,
-    activeStage: stageSlug,
+    activeStage: stageSlug as "discover" | "define" | "design",
     activeTask: taskSlug
   };
   writeProjects(projects);
