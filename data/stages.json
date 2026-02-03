@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "discover",
+    "title": "Discover",
+    "description": "Gather evidence, uncover user needs, and map the landscape."
+  },
+  {
+    "slug": "define",
+    "title": "Define",
+    "description": "Turn insights into a crisp problem statement and hypotheses."
+  },
+  {
+    "slug": "design",
+    "title": "Design",
+    "description": "Prototype, test, and iterate toward validated solutions."
+  }
+]

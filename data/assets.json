@@ -1,0 +1,185 @@
+[
+  {
+    "slug": "lean-ux-audit",
+    "title": "Lean UX Audit",
+    "description": "A lightweight checklist to pressure-test early assumptions and reveal missing evidence.",
+    "stage": "discover",
+    "taskSlug": "research-accelerator",
+    "type": "guide",
+    "format": "pdf",
+    "timeToUseMinutes": 40,
+    "whenToUse": "Before investing in primary research to surface blind spots.",
+    "inputsRequired": [
+      "Current product hypothesis",
+      "Known user pain points",
+      "Existing research notes"
+    ],
+    "steps": [
+      "List the top 5 assumptions behind the product concept.",
+      "Score each assumption by evidence quality.",
+      "Highlight the 2 assumptions with the least evidence.",
+      "Draft next-step research to validate them quickly."
+    ],
+    "fileUrl": "/assets/lean-ux-audit.pdf"
+  },
+  {
+    "slug": "research-signal-map",
+    "title": "Research Signal Map",
+    "description": "Template for capturing interviews, desk research, and market signals in one view.",
+    "stage": "discover",
+    "taskSlug": "research-accelerator",
+    "type": "canvas",
+    "format": "pdf",
+    "timeToUseMinutes": 55,
+    "whenToUse": "During early discovery to consolidate evidence across sources.",
+    "inputsRequired": [
+      "Interview notes",
+      "Market articles",
+      "Analytics snapshots"
+    ],
+    "steps": [
+      "Group evidence by user goal or pain.",
+      "Tag each signal by confidence level.",
+      "Summarize patterns that repeat across sources.",
+      "Identify the top 3 insights to carry forward."
+    ],
+    "fileUrl": "/assets/research-signal-map.pdf"
+  },
+  {
+    "slug": "competitive-snapshot",
+    "title": "Competitive Snapshot",
+    "description": "A one-page view of key competitors, differentiators, and gaps.",
+    "stage": "discover",
+    "taskSlug": "market-insights",
+    "type": "framework",
+    "format": "pdf",
+    "timeToUseMinutes": 40,
+    "whenToUse": "When you need a fast landscape view to refine positioning.",
+    "inputsRequired": [
+      "Top 3 competitors",
+      "Pricing pages",
+      "Feature lists"
+    ],
+    "steps": [
+      "Capture each competitor's core promise.",
+      "List their primary audience and proof points.",
+      "Note gaps your product can address.",
+      "Summarize differentiation in one sentence."
+    ],
+    "fileUrl": "/assets/competitive-snapshot.pdf"
+  },
+  {
+    "slug": "assumption-mapping-canvas",
+    "title": "Assumption Mapping Canvas",
+    "description": "Identify high-risk assumptions and prioritize validation experiments.",
+    "stage": "define",
+    "taskSlug": "assumption-mapping",
+    "type": "canvas",
+    "format": "pdf",
+    "timeToUseMinutes": 40,
+    "whenToUse": "After discovery to decide what to validate first.",
+    "inputsRequired": [
+      "Opportunity statement",
+      "Known risks",
+      "Stakeholder alignment"
+    ],
+    "steps": [
+      "List assumptions in each quadrant.",
+      "Rank by impact and uncertainty.",
+      "Choose top 2 to validate immediately.",
+      "Define the next experiment."
+    ],
+    "fileUrl": "/assets/assumption-mapping-canvas.pdf"
+  },
+  {
+    "slug": "metric-alignment-brief",
+    "title": "Metric Alignment Brief",
+    "description": "Align stakeholders on activation, retention, and value metrics.",
+    "stage": "define",
+    "taskSlug": "success-metrics",
+    "type": "framework",
+    "format": "pdf",
+    "timeToUseMinutes": 30,
+    "whenToUse": "Before executing experiments so success criteria are explicit.",
+    "inputsRequired": [
+      "Business goals",
+      "Current KPIs",
+      "Stakeholder priorities"
+    ],
+    "steps": [
+      "List the primary business goal.",
+      "Define 1-2 leading indicators.",
+      "Agree on reporting cadence.",
+      "Document who owns each metric."
+    ],
+    "fileUrl": "/assets/metric-alignment-brief.pdf"
+  },
+  {
+    "slug": "interview-guide",
+    "title": "Interview Guide",
+    "description": "A structured guide for user interviews focused on problem validation.",
+    "stage": "design",
+    "taskSlug": "interview-prep",
+    "type": "guide",
+    "format": "pdf",
+    "timeToUseMinutes": 25,
+    "whenToUse": "When preparing to validate problem hypotheses with users.",
+    "inputsRequired": [
+      "Target persona",
+      "Problem hypotheses",
+      "Recruiting list"
+    ],
+    "steps": [
+      "Open with context and consent.",
+      "Explore current workflows and pain points.",
+      "Probe on alternatives and willingness to switch.",
+      "Close with follow-up permissions."
+    ],
+    "fileUrl": "/assets/interview-guide.pdf"
+  },
+  {
+    "slug": "recruiting-screener",
+    "title": "Recruiting Screener",
+    "description": "Short screener to qualify participants for validation interviews.",
+    "stage": "design",
+    "taskSlug": "interview-prep",
+    "type": "template",
+    "format": "pdf",
+    "timeToUseMinutes": 15,
+    "whenToUse": "Before scheduling interviews to ensure fit.",
+    "inputsRequired": [
+      "Target criteria",
+      "Availability windows"
+    ],
+    "steps": [
+      "Define must-have criteria.",
+      "Write 3-5 qualifying questions.",
+      "Add a scheduling question.",
+      "Review with stakeholders."
+    ],
+    "fileUrl": "/assets/recruiting-screener.pdf"
+  },
+  {
+    "slug": "synthesis-board",
+    "title": "Synthesis Board",
+    "description": "Organize findings into themes, opportunities, and next-step decisions.",
+    "stage": "design",
+    "taskSlug": "synthesis",
+    "type": "canvas",
+    "format": "pdf",
+    "timeToUseMinutes": 75,
+    "whenToUse": "After interviews to connect themes and prioritize action.",
+    "inputsRequired": [
+      "Interview notes",
+      "Key quotes",
+      "Research signal map"
+    ],
+    "steps": [
+      "Group notes into themes.",
+      "Label each cluster with a headline.",
+      "Identify opportunities per theme.",
+      "Agree on next experiments."
+    ],
+    "fileUrl": "/assets/synthesis-board.pdf"
+  }
+]

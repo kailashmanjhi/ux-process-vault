@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "research-accelerator",
+    "stage": "discover",
+    "title": "Research Accelerator",
+    "description": "Rapidly collect signals about user needs and pain points."
+  },
+  {
+    "slug": "market-insights",
+    "stage": "discover",
+    "title": "Market Insights",
+    "description": "Map competitors and adjacent alternatives to frame opportunity."
+  },
+  {
+    "slug": "assumption-mapping",
+    "stage": "define",
+    "title": "Assumption Mapping",
+    "description": "Surface risky assumptions and decide what to validate first."
+  },
+  {
+    "slug": "success-metrics",
+    "stage": "define",
+    "title": "Success Metrics",
+    "description": "Define how you will measure PMF progress and learning."
+  },
+  {
+    "slug": "interview-prep",
+    "stage": "design",
+    "title": "Interview Prep",
+    "description": "Prepare scripts and recruiting to test concepts quickly."
+  },
+  {
+    "slug": "synthesis",
+    "stage": "design",
+    "title": "Synthesis",
+    "description": "Organize evidence into actionable design decisions."
+  }
+]

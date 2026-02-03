@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-mist text-ink antialiased;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-5xl px-6;
+}
+
+.card {
+  @apply rounded-2xl border border-black/10 bg-white shadow-sm transition;
+}
+
+.card:hover {
+  @apply -translate-y-0.5 shadow-md;
+}
+
+.section-title {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+.muted {
+  @apply text-sm text-black/60;
+}
