@@ -1,3 +1,10 @@
+export type AssetStatus = "todo" | "doing" | "done";
+
+export type AssetProgressItem = {
+  assetId: string;
+  status: AssetStatus;
+};
+
 export type Stage = {
   slug: "discover" | "define" | "design";
   title: string;
@@ -28,4 +35,13 @@ export type Asset = {
   steps: string[];
   fileUrl: string | null;
   isPremium?: boolean;
+};
+export type Project = {
+  id: string;
+  name: string;
+  assetIds: string[];
+  assetProgress?: AssetProgressItem[];
+  activeStage?: "discover" | "define" | "design";
+  activeTask?: string;
+  createdAt?: string;
 };

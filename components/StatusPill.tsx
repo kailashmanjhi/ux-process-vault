@@ -2,13 +2,13 @@ import type { AssetStatus } from "../lib/types";
 
 const styles: Record<AssetStatus, string> = {
   todo: "bg-black/10 text-black/70",
-  doing: "bg-amber-100 text-amber-900",
+  in_progress: "bg-amber-100 text-amber-900",
   done: "bg-emerald-100 text-emerald-900"
 };
 
 const labels: Record<AssetStatus, string> = {
   todo: "Todo",
-  doing: "Doing",
+  in_progress: "Doing",
   done: "Done"
 };
 

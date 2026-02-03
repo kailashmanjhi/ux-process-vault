@@ -64,7 +64,7 @@ export default function TaskAssetTracker({
             <div className="mt-4 flex flex-wrap gap-2 text-xs">
               <button
                 type="button"
-                onClick={() => setStatus(asset.slug, "doing")}
+                onClick={() => setStatus(asset.slug, "in_progress")}
                 className="rounded-full border border-black/20 px-3 py-1"
               >
                 Mark Doing

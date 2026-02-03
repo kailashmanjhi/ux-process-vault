@@ -1,6 +1,6 @@
 "use client";
 
-import type { Asset, AssetStatus, Project } from "../lib/types";
+import type { Asset, AssetStatus,Project } from "../lib/types";
 import StatusPill from "./StatusPill";
 import { getAssetStatus, updateAssetStatus } from "../lib/projectStore";
 
@@ -32,7 +32,7 @@ export default function AssetChecklistItem({
       <div className="mt-4 flex flex-wrap gap-2 text-xs">
         <button
           type="button"
-          onClick={() => setStatus("doing")}
+          onClick={() => setStatus("in_progress")}
           className="rounded-full border border-black/20 px-3 py-1"
         >
           Mark Doing
