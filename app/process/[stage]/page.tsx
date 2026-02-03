@@ -1,7 +1,37 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getStageBySlug, getTasksByStage } from "../../../lib/data";
 import { notFound } from "next/navigation";
 import StageProgress from "../../../components/StageProgress";
+
+type StageSlug = "discover" | "define" | "design";
+
+const stageMetadata: Record<StageSlug, Metadata> = {
+  discover: {
+    title: "Discover Phase – UX Research Templates & Audits",
+    description:
+      "Research-accelerator templates: lean audits, signal maps, competitive snapshots, and assumption canvases to gather evidence and uncover user needs."
+  },
+  define: {
+    title: "Define Phase – Problem Definition & Synthesis Tools",
+    description:
+      "Turn insights into crisp problem statements. Use synthesis canvases, metric alignment briefs, recruiting screeners, and scope frameworks."
+  },
+  design: {
+    title: "Design Phase – Wireframes, Flows & Usability Testing",
+    description:
+      "Prototype and validate solutions. Wireframing starters, usability test plans, design critique checklists, and flow templates."
+  }
+};
+
+export async function generateMetadata({
+  params
+}: {
+  params: { stage: string };
+}): Promise<Metadata> {
+  const stageSlug = params.stage as StageSlug;
+  return stageMetadata[stageSlug] || { title: "UX Process Stage" };
+}
 
 export default async function StagePage({
   params

@@ -1,9 +1,48 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getAssetBySlug } from "../../../lib/data";
 import { notFound } from "next/navigation";
 import SaveToKitButton from "../../../components/SaveToKitButton";
 import FeedbackWidget from "../../../components/FeedbackWidget";
 import MarkDoneToggle from "../../../components/MarkDoneToggle";
+
+export async function generateMetadata({
+  params
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
+  const asset = getAssetBySlug(params.id);
+
+  if (!asset) {
+    return {
+      title: "Asset not found",
+      description: "The asset you are looking for does not exist."
+    };
+  }
+
+  const title = `${asset.title} – UX Asset`;
+  const description = asset.whenToUse || asset.description;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: `https://www.uxvault.in/assets/${asset.slug}`,
+      siteName: "UX Process Vault"
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description
+    },
+    alternates: {
+      canonical: `https://www.uxvault.in/assets/${asset.slug}`
+    }
+  };
+}
 
 export default function AssetPage({
   params

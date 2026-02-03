@@ -7,6 +7,7 @@ export default function HomePage() {
   const assets = getAllAssets();
 
   return (
+    <>
     <section className="space-y-16">
       <div className="grid gap-8 md:grid-cols-[1.4fr_0.6fr]">
         <div className="card p-10">
@@ -164,5 +165,22 @@ export default function HomePage() {
         </div>
       </section>
     </section>
+    {/* SEO: Semantic structured content (hidden visually) */}
+    <div className="sr-only">
+      <h1>UX Process Vault</h1>
+      <p>
+        UX Process Vault is a production-ready library of templates, research
+        canvases, frameworks, and guides for UX designers. Accelerate your design
+        process from user discovery through problem definition to solution design
+        and validation.
+      </p>
+      <h2>Find Assets for Every Stage</h2>
+      <ul>
+        <li>Discover: Research templates, audit canvases, and signal maps</li>
+        <li>Define: Problem synthesis tools, screeners, and alignment briefs</li>
+        <li>Design: Wireframing guides, test plans, and critique checklists</li>
+      </ul>
+    </div>
+    </>
   );
 }
